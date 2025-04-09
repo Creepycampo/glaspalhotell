@@ -1,0 +1,89 @@
+body {
+    font-family: Bahnschrift, "Wide Latin", "Times New Roman", serif;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    backdrop-filter: blur(3px);
+    background-image: url("img.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+
+h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        background-image: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: rainbow 2s infinite linear;
+}
+
+      /* Shiny animation effect */
+      @keyframes rainbow {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+ }
+
+ h2 {
+        color: #333;
+        margin-top: 30px;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+ }
+
+ ul {
+        list-style: none;
+ }
+li {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 1.1em;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+  }
+      li:hover {
+        background-color: #f1f1f1;
+}
+
+footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #888;
+}
+
+ .price {
+        font-weight: bold;
+        color:black;
+     font-size: 1.2em;
+     font-style: italic;
+     font-weight: bold;
+  }
+
+      /* Responsive design for mobile devices */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.5em;
+        }
+
+        h2 {
+          font-size: 1.2em;
+        }
+
+        li {
+          font-size: 1em;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .price {
+          margin-top: 5px;
+        }
+      }
